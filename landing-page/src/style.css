@@ -1,0 +1,185 @@
+header {
+  background-color: #60d26c;
+  border: 10px solid #60d26c;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+#webpage-title {
+  color: #069968;
+  text-align: center;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 50px;
+}
+/* Keto Food Logo */
+#logo-img {
+  float: left;
+}
+/* Website navigation */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #60d26c;
+  display: flex;
+}
+li {
+  display: inline;
+  font-family: Georgia;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  width: 14.1%;
+}
+.nav-link {
+  color: white;
+  font-weight: bold;
+}
+#nav-bar {
+  padding-top: 5px;
+}
+/* nav-bar link hover effect */
+#nav-bar a:hover {
+  background-color: #6be377;
+  transition: all 0.1s ease-in;
+}
+/* nav-bar link format */
+#nav-bar a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px;
+}
+/* Keto Food Guide Image */
+#main-img {
+  width: 100%;
+  padding-top: 120px;
+}
+main {
+  border: 5px solid #60d26c;
+  text-align: center;
+  width: 100%;
+}
+/* Brief overview of Keto Diets */
+#get_started,
+#how_it_works {
+  color: #449f7d;
+  font-family: Georgia;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  text-align: justify;
+  padding: 5px 20px 5px 20px;
+  margin: 0;
+}
+#summary,
+#the_science {
+  color: #3a3f42;
+  font-family: arial;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+  margin: 0;
+  padding: 5px 20px 15px 20px;
+}
+/* Subscribe to newsletter form */
+#form {
+  background-color: #059f52;
+  color: #041f16;
+  font-size: 18px;
+  font-family: Georgia;
+  padding: 10px;
+  font-weight: bold;
+}
+/* newsletter sign-up form format */
+input {
+  border: 1px solid #059f52;
+  font-family: Georgia;
+  color: #041f16;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+/* newsletter submit email button */
+#submit:hover {
+  background-color: #6be377;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+/* footer and social media icons */
+footer {
+  text-emphasis-color: white;
+  background-color: #60d26c;
+  width: 100%;
+  border: 5px solid #60d26c;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}
+.icons {
+  display: table;
+  margin: 0 auto;
+  list-style: none;
+}
+.icons li {
+  height: 75px;
+  width: 80px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+.icons li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10%;
+  transition: all 0.3s ease-in;
+}
+.icons li a span {
+  font-size: 27px;
+  line-height: 70px;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.icons li:hover a span {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    height: 50%;
+    font-size: 50%;
+    position: relative;
+  }
+  #nav-bar {
+    margin: auto;
+    position: relative;
+  }
+  #header {
+    margin: auto;
+    position: relative;
+  }
+  #header-img {
+    width: 20%;
+    height: 20%;
+  }
+  .nav-link {
+    font-size: 10px;
+    display: flexbox;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+    width: 12%;
+  }
+  #video {
+    width: 70%;
+    height: 60%;
+  }
+}
